@@ -1,1 +1,124 @@
+Name,Register No,Email,Score,ShortAnswers,Feedback
+Bhoomika ,110,bhoomikagowda795@gmail.com,10,"['it is a programming paradgim that brings together data and methods in a sigle entity called object.', '', '']","
+Student Name: Bhoomika 
+Score: 10/15
 
+Performance Summary:
+- You answered 10 out of 15 questions correctly.
+- Your understanding of Java basics is good.
+
+Short Answer Review:
+
+Q1: it is a programming paradgim that brings together data and methods in a sigle entity called object.
+
+Q2: 
+
+Q3: 
+
+Keep practicing to improve your Java skills!"
+11,janu,j@gmail.com,3,"['n', 'n', 'n']","⚠️ AI Feedback generation failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+Bhanu,12,bhanu@gmail.com,3,"['na', 'na', 'na']","⚠️ AI Feedback generation failed: 404 models/gemini-1.0-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+122,shinchu,s@gmail.com,3,"['n', 'n', 'n']","⚠️ AI Feedback generation failed: 400 API key not valid. Please pass a valid API key. [reason: ""API_KEY_INVALID""
+domain: ""googleapis.com""
+metadata {
+  key: ""service""
+  value: ""generativelanguage.googleapis.com""
+}
+, locale: ""en-US""
+message: ""API key not valid. Please pass a valid API key.""
+]"
+1,bhanuu,bhanu@gmail.com,3,"['n', 'n', 'n']","⚠️ AI Feedback generation failed: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+0122,chaitra,chaitra@gmail.com,3,"['n', 'n', 'n']","Student 0122,
+
+Your score on the Java Basics test was 3/15. While this score indicates that there are areas needing significant improvement, it's important to remember that everyone starts somewhere in their learning journey.  This just means we have a clear roadmap of what we need to focus on next.
+
+It's difficult to highlight specific strengths from the short answers provided (n, n, n) as they don't offer much insight into your thought process. However, the fact that you attempted all the questions shows a positive attitude and willingness to engage with the material, which is a great foundation to build upon.
+
+Here are a few suggestions for improvement in Java programming:
+
+1. **Focus on fundamental concepts:**  Java Basics suggests that the test covered core concepts like data types (int, float, boolean, String), variables, operators, and basic control flow (if/else statements, loops). Review these topics thoroughly using resources like online tutorials, textbooks, or coding practice platforms.  Understanding these building blocks is crucial for writing any Java program.  Try writing simple programs that use each concept. For example, write a program that takes two numbers as input and prints their sum, or a program that checks if a number is even or odd.
+
+
+2. **Practice writing code regularly:**  Programming is a skill developed through consistent practice.  Start with small, manageable coding exercises and gradually increase the complexity. There are many online platforms (like HackerRank, Codecademy, or LeetCode) that offer coding challenges specifically designed for beginners.  Even dedicating 15-30 minutes each day to coding can make a big difference.
+
+
+3. **Debug actively:** When your code doesn't work as expected (and it will happen!), learn to debug effectively.  Use a debugger to step through your code line by line, inspect variable values, and understand the flow of execution.  Print statements can also be helpful for identifying where errors occur. Learning to debug is a crucial skill for any programmer.
+
+Don't be discouraged by this initial score. Learning to program takes time and effort. By focusing on the fundamentals, practicing regularly, and developing your debugging skills, you'll be well on your way to mastering Java. I’m here to help if you have any questions or need further guidance. Keep up the good work!
+"
+13,indira,indira@gmail.com,3,"['n', 'n', 'n']",⚠️ AI Feedback generation failed: list index out of range
+15,anu,anu@gmail.com,3,"['n', 'n', 'n']","⚠️ AI Feedback generation failed: 400 API key not valid. Please pass a valid API key. [reason: ""API_KEY_INVALID""
+domain: ""googleapis.com""
+metadata {
+  key: ""service""
+  value: ""generativelanguage.googleapis.com""
+}
+, locale: ""en-US""
+message: ""API key not valid. Please pass a valid API key.""
+]"
+14,bhoomi,bhoomika@gmail.com,3,"['q', 'q', 'q']","📘 Student 14 scored 3/15 on the Java Basics Test.
+
+✅ Writing Question Feedback:
+📝 Q1 Feedback: Your answer is incorrect.  Java's platform independence stems from the Java Virtual Machine (JVM), which executes bytecode regardless of the underlying operating system.
+📝 Q2 Feedback: Incorrect. The question asks for the five primitive data types in Java. Review your notes on basic data types.
+📝 Q3 Feedback: Your answer is incorrect.  Review the definition of JDK (Java Development Kit) and its purpose.
+
+❗ Incorrect MCQ Corrections:
+❌ Q4 Correct Answer: class
+❌ Q5 Correct Answer: Object-Oriented Programming
+❌ Q6 Correct Answer: Inheritance allows one class to inherit the fields and methods of another.
+❌ Q7 Correct Answer: Encapsulation is wrapping data and code together as a single unit.
+❌ Q8 Correct Answer: Polymorphism allows objects to take many forms.
+❌ Q9 Correct Answer: Constructors are special methods used to initialize objects.
+❌ Q10 Correct Answer: Yes, Java supports method overloading.
+❌ Q11 Correct Answer: Static methods belong to the class, not the instance.
+❌ Q12 Correct Answer: public, private, protected, default
+❌ Q13 Correct Answer: String s = new String(""Hello"");
+❌ Q14 Correct Answer: Array is a collection of similar type of elements stored in contiguous memory locations.
+❌ Q15 Correct Answer: final keyword is used to declare constants or prevent inheritance/overriding.
+
+
+👍 Keep practicing and reviewing these key concepts. You're doing great!"
+17,bh,bh@gmail.com,3,"['v', 'v', 'v']","📘 Student 17 scored 3/15 on the Java Basics Test.
+
+✅ Writing Question Feedback:
+📝 Q1 Feedback: Your answer is insufficient.  Explain how the JVM enables Java's platform independence.
+📝 Q2 Feedback: Incorrect.  Java's primitive data types include `int`, `float`, `boolean`, `char`, and `double`. Review these types and their uses.
+📝 Q3 Feedback: Incomplete answer.  Review the definition of JDK (Java Development Kit) and its purpose.
+
+❗ Incorrect MCQ Corrections:
+❌ Q4 Correct Answer: class
+❌ Q5 Correct Answer: Object-Oriented Programming
+❌ Q6 Correct Answer: Inheritance allows one class to inherit the fields and methods of another.
+❌ Q7 Correct Answer: Encapsulation is wrapping data and code together as a single unit.
+❌ Q8 Correct Answer: Polymorphism allows objects to take many forms.
+❌ Q9 Correct Answer: Constructors are special methods used to initialize objects.
+❌ Q10 Correct Answer: Yes, Java supports method overloading.
+❌ Q11 Correct Answer: Static methods belong to the class, not the instance.
+❌ Q12 Correct Answer: public, private, protected, default
+❌ Q13 Correct Answer: String s = new String(""Hello"");
+❌ Q14 Correct Answer: Array is a collection of similar type of elements stored in contiguous memory locations.
+❌ Q15 Correct Answer: final keyword is used to declare constants or prevent inheritance/overriding.
+
+
+🌟 Overall Feedback: You’ve taken the first step! Focus on understanding Java fundamentals and practice regularly."
+bh,1,b,b,h,h,4 bytes,extends,start(),Wrapping data and code together,Multiple classes,A special method to initialize objects,No,Belongs to objects,"final, static, abstract","String s = new String(""Hello"");",A class,To override methods,5
+deepikaa g,17,bh12@gmail.com,1,q,w,4 bytes,extends,run(),Inheritance of methods,Static typing,A special method to initialize objects,No,Belongs to class,"final, static, abstract","String s = new String(""Hello"");",A class,To inherit classes,5
+b,109,b@gmail.com,1. Basic Java (Core Concepts),f,d,f,myString,do-while,8 bytes,method myMethod(),Encapsulation,OutputStream,throw,float,None,Both A and B,struct,Scan data,12
+bhanupradash,143,bh@gmail.com,2. Intermediate Java (OOP & Advanced Core Java),bn,hj,g,default,Base,Map,Wrapping data,begin(),None,All of the above,A type of interface,TreeSet,Scanner,Code reuse,start(),12
+vishwanath,13,vish@gmail.com,3. Advanced Java (Enterprise & Frameworks),huhi,dkwjd,ncje,javax.db,fetch(),Spring Web,Declares a class,Dependency management,::,Packaging,None,AWT,Parallel processing,startDB(),Handle database,12
+deeraj,19,deeru@gmail.com,2. Intermediate Java (OOP & Advanced Core Java),hiiii,heloo,hshsh,protected,String,Queue,Converting primitive to object,start(),To display UI,All of the above,A special class for constants,Set,Scanner,Both A and B,run(),12
+deerajh,198,deerfu@gmail.com,1. Basic Java (Core Concepts),f,d,d,myString,for,2 bytes,def myMethod(),Polymorphism,InputStream,catch,float,None,int[] arr;,define,Print output,12
+deeksha,117,dee@gmail.com,2. Intermediate Java (OOP & Advanced Core Java),h,jjju,jii,protected,Class,Set,Converting primitive to object,begin(),To display UI,Only interfaces,A special class for constants,TreeSet,All,None,init(),12
+Indira,2001,indira1420@gmail.com,2. Intermediate Java (OOP & Advanced Core Java),bhdjw,jjiii,hh,protected,String,Map,Converting primitive to object,start(),To display UI,Only interfaces,A special class for constants,LinkedHashSet,BufferedReader,Code reuse,start(),12
+Indira,2001,indira1420@gmail.com,2. Intermediate Java (OOP & Advanced Core Java),bhdjw,jjiii,hh,protected,String,Map,Converting primitive to object,start(),To display UI,Only interfaces,A special class for constants,LinkedHashSet,BufferedReader,Code reuse,start(),12
+Indira,2001,indira1420@gmail.com,2. Intermediate Java (OOP & Advanced Core Java),bhdjw,jjiii,hh,protected,String,Map,Converting primitive to object,start(),To display UI,Only interfaces,A special class for constants,LinkedHashSet,BufferedReader,Code reuse,start(),12
+Indira,2001,indira1420@gmail.com,2. Intermediate Java (OOP & Advanced Core Java),bhdjw,jjiii,hh,protected,String,Map,Converting primitive to object,start(),To display UI,Only interfaces,A special class for constants,LinkedHashSet,BufferedReader,Code reuse,start(),12
+bhanupradashkp,78,bh00@gmail.com,1. Basic Java (Core Concepts),h,m,n,myString,while,8 bytes,def myMethod(),Polymorphism,InputStream,catch,int,Java Virtual Machine,Both A and B,object,Scan data,12
+deekshas,100,deek@gmail.com,3. Advanced Java (Enterprise & Frameworks),nnn,g,f,java.db,next(),Spring Web,Declares a class,None,function,Logging,To manage HTTP requests,Swing,Handle files,connectDB(),Map HTTP requests,12
+arpitha,123,api@gmail.com,2. Intermediate Java,bj,j,j,private,String,Queue,6
+jesta,122,jesh12@gmail.com,2. Intermediate Java,nn,n,k,protected,Object,Map,Converting object to primitive,run(),To connect to a database,Class cannot be inherited,A special class for constants,Set,InputStreamReader,Type safety,start(),15
+jesta,122,jesh12@gmail.com,3. Advanced Java,hhj,jj,ji,java.sql,next(),Spring Web,Starts app,Dependency management,=>,Debugging,To read files,Swing,Handle files,startDB(),Generate reports,15
+jesta,122,jesh12@gmail.com,2. Intermediate Java (OOP & Advanced Core Java),n,n,n,protected,Base,Queue,Converting primitive to object,run(),To create and delete files,Method with no body,A type of interface,TreeSet,BufferedReader,None,start(),12
+deepthi,108,deep@gmail.com,2. Intermediate Java (OOP & Advanced Core Java),it si s,njwk,jwio,private,String,Map,Wrapping data,start(),To connect to a database,Method with no body,A final variable,TreeSet,All,None,init(),12
+sohan,67,sohan@gmail.com,1. Basic Java (Core Concepts),bhhbh,jj,jj,string,for,4 bytes,function myMethod(),Polymorphism,OutputStream,final,int,Java Variable Machine,Both A and B,class,Input line,4
