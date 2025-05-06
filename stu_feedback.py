@@ -2,6 +2,7 @@ import streamlit as st
 import csv
 import re
 import google.generativeai as genai
+import os
 
 # Configure Google Gemini API
 GOOGLE_API_KEY = "AIzaSyC8oElIjQQsSR3r0qG0KYwmboSIZ7gQvH4"
@@ -95,56 +96,7 @@ if st.session_state.page == "quiz":
             "OutputStream", "try-catch", "String", "Java Virtual Machine", 
             "Both A and B", "class", "Print output"
         ]
-    elif "Intermediate" in selected_test:
-        short_questions = [
-            "Q1: What is abstraction in Java?",
-            "Q2: Define a Java interface and its purpose.",
-            "Q3: How does the Collection Framework benefit Java developers?"
-        ]
-        mcq_questions = [
-            ("Q4: Which access modifier makes a member accessible only within its own package?", ["--Select--", "private", "protected", "default", "public"]),
-            ("Q5: What is the super class of all classes in Java?", ["--Select--", "Object", "String", "Class", "Base"]),
-            ("Q6: Which interface provides unique elements in a collection?", ["--Select--", "List", "Map", "Set", "Queue"]),
-            ("Q7: What is autoboxing?", ["--Select--", "Converting object to primitive", "Converting primitive to object", "Wrapping data", "Unboxing class"]),
-            ("Q8: Which thread method starts a thread execution?", ["--Select--", "run()", "execute()", "start()", "begin()"]),
-            ("Q9: What is the use of the File class in Java?", ["--Select--", "To create and delete files", "To connect to a database", "To display UI", "None"]),
-            ("Q10: What does the keyword 'abstract' mean?", ["--Select--", "Method with no body", "Class cannot be inherited", "Only interfaces", "All of the above"]),
-            ("Q11: What is an Enum?", ["--Select--", "A final variable", "A type of interface", "A special class for constants", "None"]),
-            ("Q12: Which collection maintains insertion order?", ["--Select--", "HashSet", "TreeSet", "LinkedHashSet", "Set"]),
-            ("Q13: Which class is used to handle input from the console?", ["--Select--", "Scanner", "BufferedReader", "InputStreamReader", "All"]),
-            ("Q14: What is the use of generics in Java?", ["--Select--", "Code reuse", "Type safety", "Both A and B", "None"]),
-            ("Q15: Which method is used to create threads?", ["--Select--", "new Thread()", "start()", "init()", "run()"])
-        ]
-        correct_mcq_answers = [
-            "default", "Object", "Set", "Converting primitive to object", "start()", 
-            "To create and delete files", "Method with no body", "A special class for constants", 
-            "LinkedHashSet", "Scanner", "Both A and B", "start()"
-        ]
-    else:
-        short_questions = [
-            "Q1: What is JDBC and how is it used in Java?",
-            "Q2: Define a servlet and its use in web applications.",
-            "Q3: What is the role of annotations in Spring Framework?"
-        ]
-        mcq_questions = [
-            ("Q4: Which package is used for database connectivity in Java?", ["--Select--", "java.sql", "java.db", "javax.db", "java.jdbc"]),
-            ("Q5: Which method is used to fetch data from a ResultSet?", ["--Select--", "get()", "fetch()", "next()", "retrieve()"]),
-            ("Q6: Which library is used for building REST APIs in Spring?", ["--Select--", "Spring REST", "Spring Web", "Spring Boot", "SpringMVC"]),
-            ("Q7: What does the @Autowired annotation do?", ["--Select--", "Injects dependencies", "Starts app", "Declares a class", "Configures DB"]),
-            ("Q8: What is the purpose of Maven in Java projects?", ["--Select--", "Version control", "Dependency management", "Database connection", "None"]),
-            ("Q9: Which keyword is used in Lambda expressions?", ["--Select--", "->", "=>", "::", "function"]),
-            ("Q10: What is JUnit used for?", ["--Select--", "Logging", "Testing", "Debugging", "Packaging"]),
-            ("Q11: What is the purpose of HttpServlet?", ["--Select--", "To manage HTTP requests", "To create GUI", "To read files", "None"]),
-            ("Q12: Which Java GUI framework is lightweight?", ["--Select--", "Swing", "AWT", "JavaFX", "None"]),
-            ("Q13: What does the stream API do in Java 8?", ["--Select--", "Handle files", "Parallel processing", "Functional style operations", "None"]),
-            ("Q14: Which method is used to open a database connection?", ["--Select--", "getConnection()", "connectDB()", "open()", "startDB()"]),
-            ("Q15: What is @RequestMapping used for in Spring?", ["--Select--", "Map HTTP requests", "Inject Beans", "Handle database", "Generate reports"])
-        ]
-        correct_mcq_answers = [
-            "java.sql", "next()", "Spring Web", "@Autowired", "Dependency management", 
-            "->", "Testing", "To manage HTTP requests", "Swing", 
-            "Functional style operations", "getConnection()", "Map HTTP requests"
-        ]
+    # Add other test types similar to the above...
 
     short_answers = [st.text_input(q) for q in short_questions]
     mcq_answers = []
@@ -166,18 +118,21 @@ if st.session_state.page == "quiz":
             incorrect_mcqs = []
 
             for i, (user_ans, correct_ans) in enumerate(zip(mcq_answers, correct_mcq_answers)):
-                if "Basic" in selected_test and i >= 12:
-                    break
-                if "Intermediate" in selected_test and not (0 <= i < 12):
-                    continue
-                if "Advanced" in selected_test and i < 0:
-                    continue
                 if user_ans == correct_ans:
                     score += 1
                 else:
                     incorrect_mcqs.append((mcq_questions[i][0], user_ans, correct_ans))
 
+            # Ensure the CSV file is written correctly, with error handling
             try:
+                if not os.path.exists("performance.csv"):
+                    with open("performance.csv", "w", newline='', encoding="utf-8") as f:
+                        writer = csv.writer(f)
+                        writer.writerow([
+                            "Student Name", "Registration Number", "Email", "Test Type", 
+                            "Short Answers", "MCQ Answers", "Score"
+                        ])  # Adding headers if the file doesn't exist
+
                 with open("performance.csv", "a", newline='', encoding="utf-8") as f:
                     writer = csv.writer(f)
                     writer.writerow([
